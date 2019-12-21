@@ -27,4 +27,7 @@ fp-info-cache
 *.xml
 *.csv
 
+### keyboard-bridge
 
+dist/*
+!dist/*/.gitkeep
