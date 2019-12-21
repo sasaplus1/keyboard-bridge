@@ -10,7 +10,7 @@ projects := $(basename $(wildcard *.pro))
 dist_files := $(addprefix dist/,$(addsuffix -main.pdf,$(projects)) $(addsuffix -dimensions.pdf,$(projects)))
 dist_zips := $(addprefix dist/,$(addsuffix .zip,$(projects)))
 
-checksum_file := sha256sum.txt
+checksum_file := dist/sha256sum.txt
 
 dist/%.zip: %-main.pdf %-dimensions.pdf
 	zip -j $@ $^
